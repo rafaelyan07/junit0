@@ -73,6 +73,21 @@ public class UC01RegistraEmprestimoDeLivro {
 	
 	
 	
+	@Test
+	public void CT07QaundoUsuarioNuloErro(){
+		
+		Usuario usuario=null;
+		Emprestimo umEmprestimo= new Emprestimo();
+		try {
+			umEmprestimo.setUsuario(usuario);
+		} catch (Exception e) {
+			assertEquals("Dados invalidos",e.getMessage());
+		}
+		
+		
+	}
+	
+	
 	
 	
 	
